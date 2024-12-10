@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/row_food_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_rowfood_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/an_image_of_indonesian_food"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tv_rowfood_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/nama_makanan"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/img_rowfood_photo"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_rowfood_description"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="Nasi goreng, or fried rice, is a quintessential Indonesian dish loved for its rich, smoky flavors and versatility. Traditionally, it is made by stir-frying cooked rice with a mix of spices such as garlic, shallots, and chili, combined with sweet soy sauce (kecap manis) that imparts its signature caramelized taste. Protein options such as chicken, shrimp, or eggs are often added, alongside vegetables like carrots and peas, creating a hearty and satisfying meal. A squeeze of lime and a side of krupuk (crispy crackers) elevate the experience, making nasi goreng a staple not only in homes but also in street food culture and high-end restaurants.  What sets nasi goreng apart is its ability to be customized based on personal tastes or available ingredients. It can be as simple as leftover rice fried with eggs and soy sauce, or as elaborate as versions featuring exotic spices, seafood, or even duck. This adaptability has made it an internationally celebrated dish, often regarded as a comfort food. Beyond its flavor, nasi goreng holds cultural significance as it reflects the resourcefulness and culinary creativity of Indonesian cuisine, transforming humble ingredients into a beloved masterpiece."
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/img_rowfood_photo"
+            app:layout_constraintTop_toBottomOf="@+id/tv_rowfood_title" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
