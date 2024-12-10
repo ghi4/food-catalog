@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">FoodCatalogue</string>
+    <string name="an_image_of_indonesian_food">An image of Indonesian food</string>
+    <string name="nama_makanan">Nama Makanan</string>
+    <string name="deskripsi">Deskripsi</string>
 </resources>
