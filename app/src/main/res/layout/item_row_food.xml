@@ -17,8 +17,8 @@
 
         <ImageView
             android:id="@+id/img_rowfood_photo"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:contentDescription="@string/an_image_of_indonesian_food"
             android:scaleType="centerCrop"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -48,8 +48,8 @@
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             android:ellipsize="end"
-            android:maxLines="3"
-            android:text="Nasi goreng, or fried rice, is a quintessential Indonesian dish loved for its rich, smoky flavors and versatility. Traditionally, it is made by stir-frying cooked rice with a mix of spices such as garlic, shallots, and chili, combined with sweet soy sauce (kecap manis) that imparts its signature caramelized taste. Protein options such as chicken, shrimp, or eggs are often added, alongside vegetables like carrots and peas, creating a hearty and satisfying meal. A squeeze of lime and a side of krupuk (crispy crackers) elevate the experience, making nasi goreng a staple not only in homes but also in street food culture and high-end restaurants.  What sets nasi goreng apart is its ability to be customized based on personal tastes or available ingredients. It can be as simple as leftover rice fried with eggs and soy sauce, or as elaborate as versions featuring exotic spices, seafood, or even duck. This adaptability has made it an internationally celebrated dish, often regarded as a comfort food. Beyond its flavor, nasi goreng holds cultural significance as it reflects the resourcefulness and culinary creativity of Indonesian cuisine, transforming humble ingredients into a beloved masterpiece."
+            android:maxLines="4"
+            android:text="@string/food_description"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/img_rowfood_photo"
