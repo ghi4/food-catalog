@@ -32,10 +32,12 @@ class FoodDetailActivity : AppCompatActivity() {
             intent.getParcelableExtra(EXTRA_FOOD)
         }
 
-        binding.ivDetailPhoto.setImageResource(R.drawable.nasi_goreng)
-        binding.tvDetailName.text = food?.name
-        binding.tvDetailDescription.text = food?.description
-
-
+        if (food != null) {
+            binding.ivDetailPhoto.setImageResource(food.photoUrl)
+            binding.tvDetailName.text = food.name
+            binding.tvDetailDescription.text = food.description
+        } else {
+            finish()
+        }
     }
 }
