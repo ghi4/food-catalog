@@ -1,5 +1,6 @@
 package com.example.foodcatalogue
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -46,6 +47,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showSelectedFood(food: Food) {
+        val intent = Intent(this, FoodDetailActivity::class.java)
+        intent.putExtra(FoodDetailActivity.EXTRA_FOOD, food)
+        startActivity(intent)
         Toast.makeText(this, "Kamu memilih " + food.name, Toast.LENGTH_SHORT).show()
     }
 }
