@@ -7,5 +7,5 @@ import kotlinx.parcelize.Parcelize
 data class Food(
     val name: String,
     val description: String,
-    val photoUrl: String
+    val photoUrl: Int
 ) : Parcelable
