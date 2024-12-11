@@ -1,16 +1,18 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("kotlin-parcelize")
 }
 
 android {
     namespace = "com.example.foodcatalogue"
-    compileSdk = 34
+    compileSdk = 35
+    viewBinding.enable = true
 
     defaultConfig {
         applicationId = "com.example.foodcatalogue"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
