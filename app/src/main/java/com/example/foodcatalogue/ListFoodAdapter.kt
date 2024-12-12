@@ -23,24 +23,26 @@ class ListFoodAdapter(private val listFood: ArrayList<Food>) :
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
         val food = listFood[position]
-        holder.bind(food)
+        val transitionName = "transition_$position"
+        holder.bind(food, transitionName)
         holder.binding.root.setOnClickListener {
-            onItemClickCallback.onItemClicked(food)
+            onItemClickCallback.onItemClicked(food, transitionName, position)
         }
     }
 
     inner class ListViewHolder(val binding: ItemRowFoodBinding) :
         RecyclerView.ViewHolder(binding.root) {
-        fun bind(food: Food) {
+        fun bind(food: Food, transitionName: String) {
             binding.apply {
                 binding.tvRowfoodTitle.text = food.name
                 binding.tvRowfoodDescription.text = food.description
                 binding.imgRowfoodPhoto.setImageResource(food.photoUrl)
+                binding.imgRowfoodPhoto.transitionName = transitionName
             }
         }
     }
 
     interface OnItemClickCallback {
-        fun onItemClicked(food: Food)
+        fun onItemClicked(food: Food, transitionName: String, position: Int)
     }
 }
